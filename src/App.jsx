@@ -8,10 +8,13 @@ const eventData = {
   name: 'Tech Fest 2026',
   department: 'Computer Science & Engineering',
   date: 'April 25, 2026',
-  time: '10:00 AM - 5:00 PM',
+  time: '10:00 AM – 5:00 PM',
   venue: 'Main Auditorium, Block A',
   ticketPrice: 150,
-  availableTickets: 100
+  availableTickets: 100,
+  totalCapacity: 100,
+  category: 'Technical',
+  organizer: 'AVN College of Engineering'
 }
 
 function App() {
@@ -25,7 +28,9 @@ function App() {
       ...formData,
       eventName: eventData.name,
       totalAmount,
-      tickets: parseInt(formData.tickets)
+      tickets: parseInt(formData.tickets),
+      bookingId: `TF2026-${Math.random().toString(36).substr(2, 8).toUpperCase()}`,
+      bookingTime: new Date().toLocaleString('en-IN')
     }
     setBookingData(bookingDetails)
     setAvailableTickets(prev => prev - parseInt(formData.tickets))
@@ -39,13 +44,28 @@ function App() {
 
   return (
     <div className="app-container">
+      {/* Animated background */}
+      <div className="bg-scene">
+        <div className="orb orb-1" />
+        <div className="orb orb-2" />
+        <div className="orb orb-3" />
+        <div className="bg-grid" />
+      </div>
+
       <header className="app-header">
+        <div className="header-badge">
+          <span className="badge-dot" />
+          Live Event Registration
+        </div>
         <h1>Event Ticket Booking</h1>
-        <p>AVN College of Engineering</p>
+        <p className="header-subtitle">AVN College of Engineering — Internal Department Event</p>
       </header>
 
       <main className="app-main">
-        <EventDetails event={eventData} availableTickets={availableTickets} />
+        <EventDetails
+          event={eventData}
+          availableTickets={availableTickets}
+        />
 
         {!showConfirmation ? (
           <BookingForm
@@ -59,7 +79,7 @@ function App() {
       </main>
 
       <footer className="app-footer">
-        <p>AVN College of Engineering - Internal Department Event - Tech Fest 2026</p>
+        <p>© 2026 <strong>AVN College of Engineering</strong> — Tech Fest · All Rights Reserved</p>
       </footer>
     </div>
   )
