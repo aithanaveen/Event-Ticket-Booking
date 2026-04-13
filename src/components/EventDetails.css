@@ -1,0 +1,38 @@
+.event-details h2 {
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin-bottom: 16px;
+}
+
+.event-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  padding: 24px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.event-name {
+  font-size: 24px;
+  font-weight: bold;
+  color: #667eea;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #eee;
+}
+
+.event-info p {
+  margin: 10px 0;
+  color: #555;
+  font-size: 14px;
+}
+
+.event-info strong {
+  color: #333;
+}
+
+.low-tickets {
+  color: #e74c3c !important;
+  font-weight: bold;
+}
