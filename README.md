@@ -64,5 +64,3 @@ A high-end, modern React application for internal department event ticket bookin
 ## 👨‍💻 Author
 
 **Aitha Venkata Naveen**
-- GitHub Profile: [https://github.com/aithanaveen](https://github.com/aithanaveen)
-- Project Repository: [Event-Ticket-Booking](https://github.com/aithanaveen/Event-Ticket-Booking)
