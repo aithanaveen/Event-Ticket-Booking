@@ -60,3 +60,9 @@ A high-end, modern React application for internal department event ticket bookin
 
 ---
 © 2026 **AVN College of Engineering** — Internal Tech Fest Event System.
+
+## 👨‍💻 Author
+
+**Aitha Venkata Naveen**
+- GitHub Profile: [https://github.com/aithanaveen](https://github.com/aithanaveen)
+- Project Repository: [Event-Ticket-Booking](https://github.com/aithanaveen/Event-Ticket-Booking)
